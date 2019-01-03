@@ -1,0 +1,13 @@
+body{
+    background: transparent !important;
+}
+
+.bpa-mic {
+    color: white;
+    display: block;
+    font-size: 14px;
+    margin-top: 50px;
+    opacity: 0.75;
+    text-align: right;
+    width: auto;
+}

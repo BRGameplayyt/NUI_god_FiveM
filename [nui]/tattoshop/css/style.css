@@ -1,0 +1,288 @@
+/** Loterica **/
+body {
+    /* background: url(../img/menu-closed.png) no-repeat 100%; */
+    background: transparent !important;
+}
+
+.main-content {
+    margin: 50px 0 0 15px;
+    max-width: 320px !important;
+}
+
+.bpa-login {
+    margin-top: 1rem;
+    padding: 2rem 3rem;
+    border: 1px solid #a53d63;
+    border-radius: .25rem;
+}
+
+.bpa-body {
+    background: #fdfdfd;
+}
+
+.bpa-header img {
+    height: 75px;
+}
+
+.fechar span{
+    color: #a53d63;
+    position: absolute;
+    right: 1.7rem;
+    top: 1.2rem;
+}
+
+.btn-vender {
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    /* padding: 0.25rem 2rem !important; */
+    font-weight: 600 !important;
+    font-size: .8rem !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-vender:hover,
+.btn-vender:active {
+    background: #a53d63;
+    color: white;
+}
+
+.form-bpa {
+    border-radius: 0;
+    border: 2px solid #a53d63 !important;
+    color: white !important;
+    transition: ease 1s;
+    color: #a53d63 !important;
+    border-radius: .25rem;
+}
+.form-bpa:focus,
+.form-bpa:hover,
+.form-bpa:active {
+    outline: none !important;
+}
+
+.menu-title{
+    background-color: #424242;
+    color: white;
+    border-bottom: 0.2rem solid rgb(169, 69, 106);
+}
+
+.menu-title h5{
+    margin: 0.60rem;
+}
+.menu-title span{
+    font-size: 0.7rem;
+    color: #ffc6d8;
+}
+
+/** Skinshop **/
+.slimScrollDiv {
+    width: 100% !important;
+}
+
+.slot-h {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.slot-w {
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+}
+
+.slot-w:last-child {
+    border-bottom: 0;
+}
+
+.slot-b {
+    min-width: 50%;
+}
+
+.slot-b span {
+    font-size: 12px;
+    color: #a53d63;
+}
+
+.slot-b h5 {
+    font-size: 0.85rem;
+}
+
+.slot-h img {
+    height: 24px;
+    width: 24px;
+}
+
+.slot-b h5 {
+    margin: 0;
+}
+
+.slot-f {
+    display: flex;
+}
+
+.skinshop-footer {
+    border-top: 1px solid #ededed;
+    color: #6b6b6b;
+    margin-top: 10px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.skinshop-footer i {
+    font-size: 1rem !important;
+}
+
+.skinshop-footer p{
+    font-size: 0.65rem !important;
+    margin: 0 !important;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d !important;
+
+}
+
+.page-item {
+    cursor: pointer;
+}
+
+.page-link {
+    color: #a63a63 !important;
+    line-height: 1;
+    height: 34px;
+}
+
+.pagination {
+    margin: 0;
+}
+
+.items-scroll {
+    margin-bottom: 10px;
+}
+
+.btn-link {
+    color: #969696 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.card {
+    border: none !important;
+    border-radius: 0;
+    margin: 5px 0;
+}
+
+.card-header {
+    padding: 0.5rem 0 !important;
+    margin-bottom: 0;
+    background-color: rgb(249, 249, 249);
+    border: none !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+[data-toggle="collapse"] .collapse-icon:before {
+    content: "\f106" !important;
+}
+
+[data-toggle="collapse"].collapsed .collapse-icon:before {
+    content: "\f107" !important;
+}
+
+/** SCROLL **/
+.mintScrollbar__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.mintScrollbar__viewport {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mintScrollbar {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    background: #ccc;
+    background-color: rgba(0,0,0,.2);
+}
+
+.mintScrollbar__container:hover > .mintScrollbar,
+.mintScrollbar__viewport:focus ~ .mintScrollbar,
+.mintScrollbar__viewport--active ~ .mintScrollbar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mintScrollbar__thumb {
+    position: absolute;
+    background: #999;
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+}
+
+.mintScrollbar__thumb:hover {
+    background: #777;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.mintScrollbar__thumb:active {
+    background: #666;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.mintScrollbar__x {
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    height: 6px;
+}
+
+.mintScrollbar__x__thumb {
+    top: 0;
+    left: 0;
+    min-width: 20px;
+    height: 100%;
+}
+
+.mintScrollbar__y {
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 6px;
+}
+
+.mintScrollbar__y__thumb {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 20px;
+}
+
+
+* {
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }

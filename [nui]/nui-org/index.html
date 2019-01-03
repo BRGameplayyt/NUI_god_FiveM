@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body class="bpa-nui-wrapper">
+<div class="container-fluid bpa-login-wrapper" style="display:none">
+    <div class="row justify-content-center">
+        <div class="col-10 col-lg-8">
+            <div class="bpa-login">
+                <div class="bpa-header text-center">
+                    <a class="fechar" href="javascript:void(0)" id="fechar">
+                        <span><i class="fas fa-sign-out-alt"></i></span>
+                    </a>
+                    <div class="text-right botao-venda-wrapper" style="display: block">
+                        <button id="InviteButton" type="button" class="btn btn-vender"><i class="fas fa-plus"></i> Convidar</button>
+                    </div>
+                    <img class="img-fluid" src="https://i.imgur.com/yf3tmgJ.png">
+                </div>
+                <div class="bpa-body row justify-content-center">
+                    <div class="col-12">
+                        <div id="erro" class="alert alert-danger" role="alert" style="display: none;"> </div>
+                        <div class="players-list-w">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">Cargo:</th>
+                                    <th class="text-center">Nome:</th>
+                                    <th class="text-center">Ação</th>
+                                </tr>
+                                </thead>
+                                <tbody id="membersTbody"></tbody>
+                            </table>
+                        </div>
+                        <div class="org-info-w text-right">
+                            <p id="org-info-p"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid invite-wrapper" style="display:none">
+    <div class="row justify-content-center">
+        <div class="col-10 col-lg-8">
+            <div class="bpa-login">
+                <div class="bpa-header text-center">
+                    <a class="fechar" href="javascript:void(0)" id="fechar">
+                        <span><i class="fas fa-sign-out-alt"></i></span>
+                    </a>
+                    <div class="text-right botao-venda-wrapper" style="display: block">
+                        <button id="inviteMember" type="button" class="btn btn-vender"><i class="fas fa-plus"></i> Convidar</button>
+                    </div>
+                    <img class="img-fluid" src="https://i.imgur.com/yf3tmgJ.png">
+                </div>
+                <div class="bpa-body row justify-content-center">
+                    <div class="col-12">
+                        <form id="inviteForm">
+                            <div class="row">
+                                <div class="col-12 form-group">
+                                    <input id="user_id" class="form-control form-bpa" placeholder="ID" type="number" required>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <div class="fivem-lixo box"></div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-vender">Convidar Jogador</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid loading-wrapper" style="display:none">
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-8">
+            <div class="bpa-login">
+                <a class="fechar" href="javascript:void(0)">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                </a>
+                <div class="bpa-header text-center">
+                    <img class="img-fluid" src="https://i.imgur.com/yf3tmgJ.png">
+                </div>
+                <div class="bpa-body text-center carregando-body">
+                    <img class="img-fluid" src="https://i.imgur.com/35DPWcS.gif">
+                    <h5>Processando seu pedido...</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

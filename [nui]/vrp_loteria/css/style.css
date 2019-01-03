@@ -1,0 +1,57 @@
+/** Loterica **/
+body {
+    background: transparent !important;
+}
+
+.bpa-login {
+    background: #fdfdfd;
+    margin-top: 1rem;
+    padding: 2rem 3rem;
+    border: 1px solid #a53d63;
+    border-radius: .25rem;
+}
+
+.bpa-body {
+    margin-top: 2.5rem;
+}
+
+.bpa-header img {
+    height: 75px;
+}
+
+.fechar span{
+    color: #a53d63;
+    position: absolute;
+    right: 1.7rem;
+    top: 1.2rem;
+}
+
+.btn-vender {
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    padding: 0.25rem 2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-vender:hover,
+.btn-vender:active {
+    background: #a53d63;
+    color: white;
+}
+
+.form-bpa {
+    border-radius: 0;
+    border: 2px solid #a53d63 !important;
+    color: white !important;
+    transition: ease 1s;
+    color: #a53d63 !important;
+    border-radius: .25rem;
+}
+.form-bpa:focus,
+.form-bpa:hover,
+.form-bpa:active {
+    outline: none !important;
+}

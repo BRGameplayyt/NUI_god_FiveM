@@ -1,0 +1,213 @@
+body{
+    background: transparent !important;
+}
+a{
+    text-decoration: none !important;
+    color: initial !important;
+}
+a:hover{
+    text-decoration: none !important;
+    color: initial !important;
+}
+.menu-content{
+    margin-left: 1.5rem;
+}
+.menu-title{
+    background-color: #424242;
+    color: white;
+    border-bottom: 0.2rem solid rgb(169, 69, 106);
+}
+.menu-title h5{
+    margin: 0.70rem;
+}
+.menu-title span{
+    font-size: 0.7rem;
+    color: #ffc6d8;
+}
+.menu-body{
+    background: white;
+}
+.veiculos-jogador{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.25rem 0;
+}
+.veiculo-inicial{
+    background-color: #ffc6d8;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    height: 3rem;
+    padding: 0.70rem;
+    position: relative;
+    text-transform: uppercase;
+    width: 3rem;
+}
+.veiculo-wrapper{
+    padding: 0.75rem 0 0.75rem 1rem;
+    border-bottom: 1px solid #ececec;
+}
+.veiculo-info h6{
+    margin-bottom: 0.25rem;
+}
+.veiculo-info p{
+    margin-bottom: 0;
+}
+.menu-effect{
+    margin-top: 0.5rem;
+    box-shadow: 3px 2px 0px -1px rgba(240,240,240,1);
+}
+.btn-selecionar{
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    padding: 0.25rem 2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-selecionar:hover,
+.btn-selecionar:active{
+    background: #a53d63;
+    color: white;
+}
+.veiculo-indv{
+    padding: 0 1rem;
+    margin: 1rem 0rem;
+}
+.veiculo-indv-info{
+    margin: 1.5rem 0;
+}
+.veiculo-indv-info ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.veiculo-indv-info p{
+    margin: 0;
+}
+.veiculo-indv-info h4{
+    margin-bottom: 0.5rem;
+}
+.wrapper{
+    margin: 0 auto;
+    display: block;
+    width: 8rem;
+}
+.wrapper div{
+    height: 8rem;
+    width: 8rem;
+}
+.veiculo-inicial{
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    background-position: left center;
+}
+.voltargr{
+    color: black !important;
+}
+.veiculo-retorno{
+    font-size: 9rem;
+    padding: 1rem 0 0 0;
+    color: black;
+}
+.veiculo-retorno h5{
+    color: black;
+}
+.retorno-body img{
+    height: 5rem !important;
+}
+.retorno-body h5{
+    margin: 0.5rem  0 !important
+}
+.alert-warning p{
+    margin: 0 !important;
+    font-size: 0.7rem;
+}
+.veiculo-obs{
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+}
+.veiculo-retorno{
+    width: 100%;
+}
+.mintScrollbar__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.mintScrollbar__viewport {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mintScrollbar {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    background: #ccc;
+    background-color: rgba(0,0,0,.2);
+}
+
+.mintScrollbar__container:hover > .mintScrollbar,
+.mintScrollbar__viewport:focus ~ .mintScrollbar,
+.mintScrollbar__viewport--active ~ .mintScrollbar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mintScrollbar__thumb {
+    position: absolute;
+    background: #999;
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+}
+
+.mintScrollbar__thumb:hover {
+    background: #777;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.mintScrollbar__thumb:active {
+    background: #666;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.mintScrollbar__x {
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    height: 6px;
+}
+
+.mintScrollbar__x__thumb {
+    top: 0;
+    left: 0;
+    min-width: 20px;
+    height: 100%;
+}
+
+.mintScrollbar__y {
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 6px;
+}
+
+.mintScrollbar__y__thumb {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 20px;
+}

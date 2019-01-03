@@ -1,0 +1,534 @@
+/** Tela de Login / Cadastro **/
+body{
+    background: transparent !important;
+}
+.bpa-login{
+    background: #fdfdfd;
+    margin-top: 1rem;
+    padding: 2rem 3rem;
+    border: 1px solid #a53d63;
+    border-radius: .25rem;
+}
+.fechar span{
+    color: #a53d63;
+    position: absolute;
+    right: 1.7rem;
+    top: 1.2rem;
+}
+.bpa-body{
+    margin-top: 2.5rem;
+    min-height: 400px;
+}
+.bpa-header img{
+    height: 75px;
+}
+.carregando-body{
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+.carregando-body h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.form-bpa{
+    border-radius: 0;
+    border: 2px solid #a53d63 !important;
+    color: white !important;
+    transition: ease 1s;
+    color: #a53d63 !important;
+    border-radius: .25rem;
+}
+.form-bpa:focus,
+.form-bpa:hover,
+.form-bpa:active{
+    outline: none !important;
+}
+.checkbox-wrapper input[type=checkbox] {
+    outline: 2px solid #a53d63;
+    transition: ease 1s;
+}
+.btn-comprar{
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    padding: 0.25rem 2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-comprar:hover,
+.btn-comprar:active{
+    background: #a53d63;
+    color: white;
+}
+
+
+.btn-vender{
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    padding: 0.25rem 2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-vender:hover,
+.btn-vender:active{
+    background: #a53d63;
+    color: white;
+}
+
+.bpa-body p{
+    margin-bottom: 0.25rem;
+}
+.bpa-desc span{
+    font-size: 0.85rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #a53d63;
+}
+a{
+    color: #a53d63
+}
+a:hover{
+    color: #ff77ad;
+}
+.ind-container{
+    display:none;
+}
+.container-carro{
+    box-shadow: 1px 1px 1px rgba(174,174,181,.2);
+    background-color: #ffffff;
+    margin: 0 2rem;
+    margin-bottom: 1px;
+}
+.carro-body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0rem 0.5rem;
+    height: 15rem;
+}
+.carro-footer{
+    padding: 0.75rem 1rem;
+}
+#nome-veiculo{
+    padding: 0.5rem;
+    margin: 0;
+}
+#preco{
+    color: red;
+    margin: 0;
+}
+#dono{
+    margin-right: 0.5rem;
+}
+.owl-dots{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.owl-dot{
+    display: inline-block;
+}
+.owl-dot span{
+    height: 0.15rem;
+    background: #3a424a;
+    width: 1.5rem;
+    display: block;
+    margin: 5px 7px;
+    opacity: 0.5;
+}
+.owl-dot.active span{
+    background: #a53d63;
+}
+.veiculo-desc ul{
+    list-style: none;
+    padding: 0.5rem;
+}
+.veiculo-fotos{
+    position: relative;
+    height: 280px;
+}
+.veiculo-desc h2{
+    color: #a53d63;
+}
+.coluna-lateral{
+    display: none;
+}
+.nav-item{
+    transition: cubic-bezier(0.65, 0.05, 0.36, 1) 0.7s;
+}
+.selecao-wrapper{
+    /*margin: 0 3.8rem;*/
+    padding: 1rem 0.5rem;
+    background: #a53d63;
+    border: 0.3rem solid #693b4c;
+    border-radius: 0.8rem;
+    color: white;
+    transition: ease 0.5s;
+}
+.valor-hipotetico p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2rem;
+}
+.valor-hipotetico span{
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #cacaca;
+}
+#simulacao{
+    color: #a53d63;
+}
+.selecao-titulo h6{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.selecao-wrapper:hover{
+    background: transparent;
+    color: #a53d63;
+}
+.checkbox-wrapper{
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+.checkbox-wrapper label{
+    margin: 0;
+}
+.checkbox-bpa{
+    padding-left: 1rem;
+}
+.checkbox-bpa input:checked ~ .checkbox-bpa__indicador{
+    background: #a53d63;
+}
+/* Hover state whilst checked */
+.checkbox-bpa:hover input:not([disabled]):checked ~ .checkbox-bpa__indicador,
+.checkbox-bpa input:checked:focus ~ .checkbox-bpa__indicador {
+    background: #a53d63;
+}
+
+/* Disabled state */
+.checkbox-bpa input:disabled ~ .checkbox-bpa__indicador {
+    pointer-events: none;
+    opacity: .6;
+    background: #e6e6e6;
+}
+
+/* Check mark */
+.checkbox-bpa__indicador:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+/* Show check mark */
+.checkbox-bpa input:checked ~ .checkbox-bpa__indicador:after {
+    display: block;
+}
+
+/* Checkbox tick */
+.checkbox-bpa .checkbox-bpa__indicador:after {
+    top: 0.25rem;
+    left: 0.45rem;
+    width: 0.4rem;
+    height: 0.6rem;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.checkbox-bpa input:disabled ~ .checkbox-bpa__indicador:after {
+    border-color: #7b7b7b;
+}
+.obs-venda p{
+    font-size: 0.9rem;
+}
+.obs-venda span{
+    font-size: 0.8rem;
+}
+.checkbox-bpa input{
+    opacity: 0;
+}
+.checkbox-bpa__indicador{
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+}
+.large-btns_nav {
+    z-index: 3;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    opacity: 0.6;
+    text-indent: -9999px;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #000 url("../img/nav.gif") no-repeat left 50%;
+    width: 38px;
+}
+
+.large-btns_nav:active {
+    opacity: 1.0;
+}
+
+.large-btns_nav.next {
+    left: auto;
+    background-position: right 50%;
+    right: 0;
+}
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+    outline: none;
+}
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+    display: inline;
+    float: none;
+    _float: left;
+    *float: left;
+    margin-right: 5px;
+}
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+    text-indent: -9999px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #ccc;
+    background: rgba(0,0,0, .2);
+    display: inline-block;
+    _display: block;
+    *display: block;
+    -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+    width: 9px;
+    height: 9px;
+}
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+    background: #222;
+    background: rgba(0,0,0, .8);
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    max-height: 320px;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.rslides_container {
+    margin-bottom: 50px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.centered-btns_nav {
+    z-index: 3;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 50%;
+    left: 0;
+    opacity: 0.7;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("../img/nav.gif") no-repeat left top;
+    margin-top: -45px;
+}
+
+.centered-btns_nav:active {
+    opacity: 1.0;
+}
+
+.centered-btns_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
+
+.transparent-btns_nav {
+    z-index: 3;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 0;
+    left: 0;
+    display: block;
+    background: #fff; /* Fix for IE6-9 */
+    opacity: 0;
+    filter: alpha(opacity=1);
+    width: 48%;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 91%;
+}
+
+.transparent-btns_nav.next {
+    left: auto;
+    right: 0;
+}
+
+.aviso_sucesso{
+    display: none;
+}
+.aviso_fail{
+    display: none;
+}
+/** GG FIVEM **/
+
+/*****
+ *
+ * Radio checked style related
+ * the fun part starts here
+ *
+ */
+input[type=radio] {
+    display: none;
+}
+
+/**
+ * How it should look when hovered
+ */
+.active-label, label:focus, label:hover, label:active, input:checked + label {
+    color: #a53d63;
+}
+.active-label:before, label:focus:before, label:hover:before, label:active:before, input:checked + label:before {
+    background: white;
+    border-color: #a53d63;
+}
+
+/**
+ * Make those labels sexy
+ */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    display: block;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    /**
+     * This is the radio fake dot basically
+     */
+}
+label:first-of-type {
+    border: 0;
+}
+label:before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: .2rem solid #ccc;
+}
+
+/**
+ * How it should look when checked
+ */
+input:checked + label:before {
+    border-color: white;
+    border: none;
+    background: #a53d63;
+}
+
+/**
+ * How it should look when disabled
+ */
+input:disabled + label {
+    background: #efefef;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: not-allowed;
+}
+input:disabled + label:hover {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+input:disabled + label:before {
+    border-color: white;
+    background: white;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 300px !important;
+}
+
+.lista-vazia {
+    color: #a53d63;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.lista-vazia svg {
+    font-size: 5rem;
+}
+
+.lista-vazia h2 {
+    margin: 20px 0;
+}

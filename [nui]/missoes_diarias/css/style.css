@@ -1,0 +1,195 @@
+/** Loterica **/
+body {
+    /* background: url(../img/menu-closed.png) no-repeat 100%; */
+    background: transparent !important;
+}
+
+.main-content {
+    margin: 0 45px 125px 0;
+    max-width: 240px !important;
+}
+
+.bpa-login {
+    margin-top: 1rem;
+    padding: 2rem 3rem;
+    border: 1px solid #a53d63;
+    border-radius: .25rem;
+}
+
+.bpa-body {
+    background: #fdfdfd;
+}
+
+.bpa-header img {
+    height: 75px;
+}
+
+.fechar span{
+    color: #a53d63;
+    position: absolute;
+    right: 1.7rem;
+    top: 1.2rem;
+}
+
+.btn-vender {
+    margin-top: 0 !important;
+    border: 2px solid #a53d63 !important;
+    padding: 0.25rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: .8rem !important;
+    text-transform: uppercase;
+    background: transparent;
+    transition: ease 1s;
+    color: #a53d63;
+}
+.btn-vender:hover,
+.btn-vender:active {
+    background: #a53d63;
+    color: white;
+}
+
+.form-bpa {
+    border-radius: 0;
+    border: 2px solid #a53d63 !important;
+    color: white !important;
+    transition: ease 1s;
+    color: #a53d63 !important;
+    border-radius: .25rem;
+}
+.form-bpa:focus,
+.form-bpa:hover,
+.form-bpa:active {
+    outline: none !important;
+}
+
+.menu-title{
+    background-color: #424242;
+    color: white;
+    border-bottom: 0.2rem solid rgb(169, 69, 106);
+}
+.menu-title h5{
+    margin: 0.70rem;
+}
+.menu-title span{
+    font-size: 0.7rem;
+    color: #ffc6d8;
+}
+
+.mission-w {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin: .75rem 0;
+}
+
+.mission-w p {
+    font-size: .75rem;
+    margin: 0 0 .5rem 0;
+}
+
+.missions-collapsed {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.mission-helper {
+    background: #e7e7e7;
+    color: #6b6b6b;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.mission-helper i {
+    font-size: 1rem !important;
+}
+
+.mission-helper p{
+    font-size: 0.65rem !important;
+    margin: 0 !important;
+}
+
+.bg-progress-bpa {
+    background-color: #a53d63 !important;
+}
+
+.mission-h span{
+    color: #a53d63;
+    font-size: 0.75rem;
+}
+
+/** SCROLL **/
+.mintScrollbar__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.mintScrollbar__viewport {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mintScrollbar {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    opacity: 0;
+    background: #ccc;
+    background-color: rgba(0,0,0,.2);
+}
+
+.mintScrollbar__container:hover > .mintScrollbar,
+.mintScrollbar__viewport:focus ~ .mintScrollbar,
+.mintScrollbar__viewport--active ~ .mintScrollbar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mintScrollbar__thumb {
+    position: absolute;
+    background: #999;
+    background-color: rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+}
+
+.mintScrollbar__thumb:hover {
+    background: #777;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.mintScrollbar__thumb:active {
+    background: #666;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.mintScrollbar__x {
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    height: 6px;
+}
+
+.mintScrollbar__x__thumb {
+    top: 0;
+    left: 0;
+    min-width: 20px;
+    height: 100%;
+}
+
+.mintScrollbar__y {
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 6px;
+}
+
+.mintScrollbar__y__thumb {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 20px;
+}
